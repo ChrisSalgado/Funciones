@@ -9,7 +9,10 @@
 
 </head>
 <body> 
- 
+     
+     <section id="contenedor_general">
+      
+     </section>
    
     <header>
         <div class="menu_bar" id="menu">
@@ -31,8 +34,9 @@
                 </li>
             </ul>
         </nav>
-        
     </header>
+    
+    
     
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
