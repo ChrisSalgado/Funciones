@@ -34,24 +34,30 @@
         </nav>
         
     </header>
-    <form action="" method="">
-        <div class="contenedor">
-            <div class="form">
-               <h2 class="form_titulo">Iniciar Sesión</h2> 
-               <input type="text" class="form_input">
-               <label for="" class="form_label">Usuario</label>
-               <input type="password" class="form_input">
-               <label for="" class="form_label">Contraseña</label>
-               <input type="submit" class="form_submit">
-            </div>
+    
+    <div class="contenedor-1">
+        <div class="contenedor-iniciar">
+            <h2>Iniciar Sesión</h2>
+            <form action=" " method="">
+                 <input type="text" class = "texto" placeholder="Ingrese Correo" name="correo" required><br>
+                 <input type="password" class = "texto" placeholder="Ingrese Contraseña" name="clave" required><br>
+                 <input type="submit" class="botoncito">
+            </form>
         </div>
-    </form>
+            
+        <div class="imagen">
+            <img src="../img/Logo.png" width="300px" alt="">
+        </div>
+    </div>
+    <div class="abajo">
+         <h3>¿No te has unido a nuestra comunidad?, puedes crear una cuenta <a href="../asset/Register.php">Aquí</a></h3>
+    </div>
     
    
     
     
-    <script src="../js/index.js"></script>
-    <script src="../js/jquery.js"></script>
+     <script src="../js/index.js"></script>
+     <script src="../js/jquery.js"></script>
      <script src="../js/form.js"></script>
 </body>
 </html>

@@ -36,13 +36,11 @@
         </nav>
         
     </header>
-<<<<<<< HEAD
-        <!--Registro!-->
         <div class="registro">
                <div class="tema">
                      <h2 class="">Registrar Usuario</h2>
                  </div>
-                <form action="principal.php" method="POST" class="form">
+                <form action="principal.php" method="POST" class="formu">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text">
                     <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text">
                     <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text">
@@ -55,34 +53,6 @@
                     </div>
                 </form>
         </div>
-=======
-    
-    <form action="" method="">
-        <div class="contenedor">
-            <div class="form">
-               <h2 class="form_titulo">Registrarse</h2> 
-               <input type="text" class="form_input">
-               <label for="" class="form_label">Nombre</label>
-               <input type="text" class="form_input">
-               <label for="" class="form_label">Apellido</label>
-               <input type="text" class="form_input">
-               <label for="" class="form_label">Edad</label>
-               <input type="text" class="form_input">
-               <label for="" class="form_label">Nombre de usuario</label>
-               <input type="password" class="form_input">
-               <label for="" class="form_label">Contraseña</label>
-               <input type="password" class="form_input">
-               <label for="" class="form_label">Repita contraseña</label>
-
-               <label for="" class="form_label"></label>
-
-               <input type="submit" class="form_submit">
-            </div>
-        </div>
-    </form>
-    
-    
->>>>>>> 6a3400b075805abe8d1d43e1b0db71d44628f7e3
    
     
     
