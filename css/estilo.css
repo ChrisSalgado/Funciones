@@ -103,7 +103,7 @@ header nav ul li .caret{
 }
 
 
-/*Inicio del Wallpaper*/
+/*---------------------------Inicio del Wallpaper------------------------*/
 
 section#contenedor_general{
     position: fixed;
@@ -112,7 +112,7 @@ section#contenedor_general{
     top:0px;
     left: 0px;
     z-index: -1;
-    background-image: url(../img/imagen.jpg);
+    background-image: url(../img/img.jpg);
     background-size: cover;
     background-position: center 0px;
     background-repeat: no-repeat;
@@ -122,7 +122,7 @@ section#contenedor_general{
 
 
 
-/*Aplicando el responsive en al header*/
+/*----------------------Aplicando el responsive en al header-----------------------*/
 
 
 @media screen and (max-width:800px) {
@@ -195,7 +195,7 @@ section#contenedor_general{
     }
 }
 
-/*Registro*/
+/*-----------------------Registro-----------------------*/
 .registro{
     width:40%;
     background: rgba(0,0,0,.6);
@@ -220,12 +220,16 @@ section#contenedor_general{
     background: rgba(0,0,0,.8);
     border-radius: 5px 5px 0px 0px;
     color: white;
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.tema-login{
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -277,7 +281,7 @@ section#contenedor_general{
     padding: 20px;
     position: relative;
     color: white;
-    top:150px;
+    top:95px;
     border-radius: 5px;
     
     display: flex;
@@ -319,7 +323,7 @@ form{
 }
 
 .imagen{
-    padding: 30px;
+    padding: 20px;
     border-left: 1px solid #fff;
 }
 
@@ -328,14 +332,14 @@ form{
     color: white;
     font-family: Open Sans, sans-serif;
     font-size: 12px;
-    top:160px;
+    top:110px;
     position: relative;
     margin: auto;
 }
 
 h3 a{
     text-decoration: none;
-    color: #081a27;
+    color: #0094ff;
 }
 
 

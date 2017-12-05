@@ -38,16 +38,16 @@
     </header>
         <div class="registro">
                <div class="tema">
-                     <h2 class="">Registrar Usuario</h2>
+                     <h2 class="tema">Registrar Usuario</h2>
                  </div>
                 <form action="principal.php" method="POST" class="formu">
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text">
-                    <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text">
-                    <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text">
-                    <input type="text" placeholder="Edad" id="edad" name="edad" class="input-text">
-                    <input type="password" placeholder="Contraseña" id="pass" name="pass" class="input-text">
-                    <input type="password" placeholder="Repetir Contraseña" id="Repetirpass" name="Repetirpass" class="input-text">
-                    <input type="mail" placeholder="correo" id="correo" name="correo" class="input-text big">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text" required>
+                    <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text" required>
+                    <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text" required>
+                    <input type="text" placeholder="Edad" id="edad" name="edad" class="input-text" required>
+                    <input type="password" placeholder="Contraseña" id="pass" name="pass" class="input-text" required>
+                    <input type="password" placeholder="Repetir Contraseña" id="Repetirpass" name="Repetirpass" class="input-text" required>
+                    <input type="mail" placeholder="correo" id="correo" name="correo" class="input-text big" required>
                     <div class="boton">
                         <input type="submit" value ="Registrarse" name="boton" id="boton" class="boton-registro">
                     </div>

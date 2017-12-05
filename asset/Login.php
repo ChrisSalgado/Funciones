@@ -37,7 +37,7 @@
     
     <div class="contenedor-1">
         <div class="contenedor-iniciar">
-            <h2>Iniciar Sesión</h2>
+            <h2 class="tema-login">Iniciar Sesión</h2>
             <form action=" " method="">
                  <input type="text" class = "texto" placeholder="Ingrese Correo" name="correo" required><br>
                  <input type="password" class = "texto" placeholder="Ingrese Contraseña" name="clave" required><br>
@@ -46,7 +46,7 @@
         </div>
             
         <div class="imagen">
-            <img src="../img/Logo.png" width="300px" alt="">
+            <img src="../img/Logotipo.png" width="300px" alt="">
         </div>
     </div>
     <div class="abajo">
