@@ -9,6 +9,9 @@
 
 </head>
 <body> 
+   <section id="contenedor_general">
+      
+     </section>
     <header>
         <div class="menu_bar" id="menu">
             <a href="#" class="bt-menu" ><span class="icon-menu"></span>Funcionalidades</a>
