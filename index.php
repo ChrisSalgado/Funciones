@@ -9,6 +9,8 @@
 
 </head>
 <body> 
+ 
+   
     <header>
         <div class="menu_bar" id="menu">
             <a href="#" class="bt-menu" ><span class="icon-menu"></span>Funcionalidades</a>
@@ -33,7 +35,7 @@
     </header>
     
     <script src="js/index.js"></script>
-   <script src="js/jquery.js"></script>
-     <script src="js/form.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
