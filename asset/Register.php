@@ -40,7 +40,7 @@
                <div class="tema">
                      <h2 class="tema">Registrar Usuario</h2>
                  </div>
-                <form action="principal.php" method="POST" class="formu">
+                <form action="Register.php" method="GET" class="formu">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text" required>
                     <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text" required>
                     <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text" required>

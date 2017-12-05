@@ -29,6 +29,8 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 header nav{
     background: transparent;
     z-index: 1000;
@@ -120,81 +122,6 @@ section#contenedor_general{
 }
 
 
-
-
-/*----------------------Aplicando el responsive en al header-----------------------*/
-
-
-@media screen and (max-width:800px) {
-    body{
-        padding-top: 72px;
-    }
-    
-    .menu_bar{
-        display: block;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #E6344A;
-    }
-    
-    .menu_bar .bt-menu{
-        display: block;
-        padding: 20px;
-        color: #fff;
-        overflow: hidden;
-        font-size: 25px;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    
-    .menu_bar span{
-        float: right;
-        font-size: 40px;
-    }
-    
-    header nav {
-        width:80%;
-        height: calc(100% - 80px);
-        position: fixed;
-        right: 100%;
-        margin: 0;
-        overflow: scroll;
-    }
-    
-    mostrar{
-        right: 0%;
-    }
-    
-    header nav ul li{
-        display: block;
-        border-bottom: 1px solid rgba(255,255,255,.5);
-    }
-    
-    header nav ul li a {
-        display: block;
-    }
-    
-     header nav ul li:hover .children {
-    
-        display: none;
-    }
-    
-    header nav ul li a .children {
-        width: 100%;
-        position: relative;
-    }
-    
-       header nav ul li a .children li a {
-        margin-left: 20px;
-    }
-    
-    header nav ul li .caret{
-        float: right;
-    }
-}
-
 /*-----------------------Registro-----------------------*/
 .registro{
     width:40%;
@@ -216,7 +143,7 @@ section#contenedor_general{
 
 .tema{
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     background: rgba(0,0,0,.8);
     border-radius: 5px 5px 0px 0px;
     color: white;
@@ -272,6 +199,10 @@ section#contenedor_general{
     background: rgba(0,0,0,.9);
     color: white;
 }
+
+
+  
+
 
 /*---------------------LOGIN---------------------------*/
 
@@ -342,5 +273,217 @@ h3 a{
     color: #0094ff;
 }
 
+/*----------------------Aplicando el responsive en al header-----------------------*/
+
+
+@media screen and (max-width:800px) {
+    body{
+        padding-top: 72px;
+    }
+    
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #E6344A;
+        
+    }
+    
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+    
+    header nav {
+        width:80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    
+    mostrar{
+        right: 0%;
+    }
+    
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    
+    header nav ul li a {
+        display: block;
+    }
+    
+     header nav ul li:hover .children {
+    
+        display: none;
+    }
+    
+    header nav ul li a .children {
+        width: 100%;
+        position: relative;
+    }
+    
+       header nav ul li a .children li a {
+        margin-left: 20px;
+    }
+    
+    header nav ul li .caret{
+        float: right;
+    }
+    
+/*---------------Responsive del Registro---------------*/
+    
+    .registro{
+        width:90%;
+        background: rgba(0,0,0,.6);
+        position: relative;
+        color: black;
+        top: 50px;
+        border-radius: 5px;
+        font-family: sans-serif;
+        z-index: -1000px;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .tema-login{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    .formu{
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+
+    .input-text{
+        width: 80%;
+        padding: 10px;
+        margin: 15px 5px;
+        font-size: 15px;
+    }
+
+    .big{
+        width: 83%;
+        margin: 15px 25px;
+    }
+
+    .boton{
+        width: 100%;
+        margin: 10px 10px;
+        background: transparent;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .boton-registro{
+        width:50%;
+        padding: 15px;
+        border: 0;
+        margin-right: 20px;
+        background: rgba(0,0,0,.9);
+        color: white;
+    }
+    
+    /*---------------Responsive del Login---------------*/
+      .contenedor-1{
+            width:80%;
+            background: rgba(1,1,1,.8);
+            padding: 20px;
+            position: relative;
+            color: white;
+            top:95px;
+            border-radius: 5px;
+            overflow: hidden;
+          
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            align-content: center;
+        }
+
+        h2{
+            margin-left: 20px;
+        }
+
+        form{
+            width: 100%;
+            padding: 0px;
+        }
+
+
+         .texto{
+             width: 90%;
+             padding: 10px;
+             font-family: sans-serif;
+             font-size: 17px;
+             border-radius: 5px;
+             margin: 15px 0px;
+        }
+
+        .botoncito{
+            width: 90px;
+            background: #741111;
+            border: 0;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .imagen{
+            display: none;
+            overflow: hidden;
+        }
+
+        .abajo{
+            width: 80%;
+            color: white;
+            font-family: Open Sans, sans-serif;
+            font-size: 12px;
+            top:110px;
+            position: relative;
+            margin: auto;
+        }
+
+        h3 a{
+            text-decoration: none;
+            color: #0094ff;
+        }
+
+    
+    
+    
+    
+}
 
 

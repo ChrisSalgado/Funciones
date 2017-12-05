@@ -38,7 +38,7 @@
     <div class="contenedor-1">
         <div class="contenedor-iniciar">
             <h2 class="tema-login">Iniciar Sesión</h2>
-            <form action=" " method="">
+            <form action="" method="GET">
                  <input type="text" class = "texto" placeholder="Ingrese Correo" name="correo" required><br>
                  <input type="password" class = "texto" placeholder="Ingrese Contraseña" name="clave" required><br>
                  <input type="submit" class="botoncito">
