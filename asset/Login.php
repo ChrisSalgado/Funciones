@@ -34,16 +34,19 @@
         </nav>
         
     </header>
-    <div class="contenedor">
-        <div class="form">
-           <h2 class="form_titulo">Iniciar Sesión</h2> 
-           <input type="text" class="form_input">
-           <label for="" class="form_label">Usuario</label>
-           <input type="password" class="form_input">
-           <label for="" class="form_label">Contraseña</label>
-           <input type="submit" class="form_submit">
+    <form action="" method="">
+        <div class="contenedor">
+            <div class="form">
+               <h2 class="form_titulo">Iniciar Sesión</h2> 
+               <input type="text" class="form_input">
+               <label for="" class="form_label">Usuario</label>
+               <input type="password" class="form_input">
+               <label for="" class="form_label">Contraseña</label>
+               <input type="submit" class="form_submit">
+            </div>
         </div>
-    </div>
+    </form>
+    
    
     
     

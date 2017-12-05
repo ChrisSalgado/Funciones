@@ -31,27 +31,32 @@
         </nav>
         
     </header>
-    <div class="contenedor">
-        <div class="form">
-           <h2 class="form_titulo">Registrarse</h2> 
-           <input type="text" class="form_input">
-           <label for="" class="form_label">Nombre</label>
-           <input type="text" class="form_input">
-           <label for="" class="form_label">Apellido</label>
-           <input type="text" class="form_input">
-           <label for="" class="form_label">Edad</label>
-           <input type="text" class="form_input">
-           <label for="" class="form_label">Nombre de usuario</label>
-           <input type="password" class="form_input">
-           <label for="" class="form_label">Contraseña</label>
-           <input type="password" class="form_input">
-           <label for="" class="form_label">Repita contraseña</label>
-           
-           <label for="" class="form_label"></label>
-           
-           <input type="submit" class="form_submit">
+    
+    <form action="" method="">
+        <div class="contenedor">
+            <div class="form">
+               <h2 class="form_titulo">Registrarse</h2> 
+               <input type="text" class="form_input">
+               <label for="" class="form_label">Nombre</label>
+               <input type="text" class="form_input">
+               <label for="" class="form_label">Apellido</label>
+               <input type="text" class="form_input">
+               <label for="" class="form_label">Edad</label>
+               <input type="text" class="form_input">
+               <label for="" class="form_label">Nombre de usuario</label>
+               <input type="password" class="form_input">
+               <label for="" class="form_label">Contraseña</label>
+               <input type="password" class="form_input">
+               <label for="" class="form_label">Repita contraseña</label>
+
+               <label for="" class="form_label"></label>
+
+               <input type="submit" class="form_submit">
+            </div>
         </div>
-    </div>
+    </form>
+    
+    
    
     
     
