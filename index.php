@@ -17,11 +17,17 @@
         
         <nav>
             <ul>
-                <li><a href="#"><span class="icon-home"></span>Item #1</a></li>
-                <li><a href="#"><span class="icon-rocket"></span>Item #2</a></li>
-                <li><a href="#"><span class="icon-earth"></span>Item #3</a></li>
-                <li><a href="#"><span class="icon-envelop"></span>Item #3</a></li>
-                <li><a href="#"><span class="icon-user"></span>Item #3</a></li>
+                <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+                <li><a href="#"><span class="icon-rocket"></span>Proyectos</a></li>
+                <li><a href="#"><span class="icon-earth"></span>Nosotros</a></li>
+                <li><a href="#"><span class="icon-envelop"></span>Contacto</a></li>
+                <li clas="submenu">
+                    <a href="#"><span class="icon-user"></span>Usuario<span class="caret icon-circle-down"></span></a>
+                    <ul class="children">
+                        <li><a href="#">Registrarse <span class="icon-circle-left"></span></a></li>
+                        <li><a href="#">Iniciar Sesión <span class="icon-circle-left"></span></a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         
