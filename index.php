@@ -2,15 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilo.css">
-=======
     <title>Inicio</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="fonts.css">
->>>>>>> 8f6b3c967f950e3aca14350f905cd1e4c8884b1c
+
 </head>
 <body> 
    
@@ -25,9 +21,6 @@
         </div>
     </div>
     
-<<<<<<< HEAD
-    <script src="js/form.js"></script>
-=======
     <header>
         <div class="menu_bar" id="menu">
             <a href="#" class="bt-menu" ><span class="icon-menu"></span>Funcionalidades</a>
@@ -51,15 +44,8 @@
         
     </header>
     
-    
-    
-    
-<<<<<<< HEAD
     <script src="js/index.js"></script>
->>>>>>> 8f6b3c967f950e3aca14350f905cd1e4c8884b1c
-=======
    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script> 
->>>>>>> 17360341fe449ef6eaa80e4c8e4be661e234be6b
+     <script src="js/form.js"></script>
 </body>
 </html>
