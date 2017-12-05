@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 *{
     margin: 0;
     padding: 0;
+=======
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+*{
+    padding: 0px;
+    margin 0px;
+>>>>>>> 8f6b3c967f950e3aca14350f905cd1e4c8884b1c
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body{
     
     -webkit-background-size: cover;
@@ -101,3 +109,90 @@ body{
 
 
 
+=======
+body{background: #FEFEFE;}
+
+.menu_bar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav{
+    background: #023859;
+    z-index: 1000;
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+
+header nav ul li:hover{
+    background: #E6344A;
+}
+
+/*submenu*/
+
+header nav ul li:hover .children{
+    display: block;
+}
+
+
+
+header nav ul li .children{
+    display: none;
+    background: #011826;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a{
+    display: block;
+}
+
+header nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/*flecha de sub menú*/
+
+header nav ul li .caret{
+    position: relative;
+    top 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+/*Aplicando el responsive en el navbar*/
+>>>>>>> 8f6b3c967f950e3aca14350f905cd1e4c8884b1c
