@@ -43,8 +43,8 @@
                 <form action="principal.php" method="POST" class="formu">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text">
                     <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text">
-                    <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text">
-                    <input type="text" placeholder="Edad" id="edad" name="edad" class="input-text">
+                    <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text" onkeypress="return solonumeros(event)" onpaste="return false">
+                    <input type="text" placeholder="Edad" id="edad" name="edad" class="input-text" onkeypress="return solonumeros(event)" onpaste="return false">
                     <input type="password" placeholder="Contraseña" id="pass" name="pass" class="input-text">
                     <input type="password" placeholder="Repetir Contraseña" id="Repetirpass" name="Repetirpass" class="input-text">
                     <input type="mail" placeholder="correo" id="correo" name="correo" class="input-text big">
@@ -55,7 +55,7 @@
         </div>
    
     
-    
+    <script src="../js/validaciones.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/jquery.js"></script>
      <script src="../js/form.js"></script>
