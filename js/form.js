@@ -1,4 +1,4 @@
-var inputs = document.getElementsByClassName('form_input');
+var inputs = document.getElementsByClassName('.input-text');
 
 for(var i =0; i< inputs.length; i++){
     inputs[i].addEventListener('keyup', function(){
