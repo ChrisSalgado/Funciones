@@ -195,4 +195,81 @@ header nav ul li .caret{
 }
 
 /*Aplicando el responsive en el navbar*/
+<<<<<<< HEAD
 >>>>>>> 8f6b3c967f950e3aca14350f905cd1e4c8884b1c
+=======
+
+@media screen and (max-width:800px) {
+    body{
+        padding-top: 72px;
+    }
+    
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #E6344A;
+    }
+    
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .menu_bar span{
+        float: right;
+        font-size: 40px;
+    }
+    
+    header nav {
+        width:80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    
+    mostrar{
+        right: 0%;
+    }
+    
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    
+    header nav ul li a {
+        display: block;
+    }
+    
+     header nav ul li:hover .children {
+    
+        display: none;
+    }
+    
+    header nav ul li a .children {
+        width: 100%;
+        position: relative;
+    }
+    
+       header nav ul li a .children li a {
+        margin-left: 20px;
+    }
+    
+    header nav ul li .caret{
+        float: right;
+    }
+}
+
+
+
+
+>>>>>>> 17360341fe449ef6eaa80e4c8e4be661e234be6b
