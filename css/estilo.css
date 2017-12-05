@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 *{
     padding: 0px;
@@ -13,7 +14,6 @@ body{
     
     -webkit-background-size: cover;
     background-size: cover;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .contenedor .form{
@@ -24,32 +24,47 @@ body{
     top: 25%;
     left: 50%;
     margin-left: -250px;
-    padding: 20px;
-    
+    padding: 80px 50px;
+    background: black;
+    color: white;
     border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.form{
+    color: white;
+}
+
+
 
 .contenedor .form .form_titulo{
     text-align: center;
     margin: 0;
+    color: white;
 }
 
 .form_input, .form_label, .form_submit{
      display: block;
      width: 100%;
-    font-size: 1.3em;
+     font-size: 1.3em;
     
 }
 
 .form_input{
      padding: 20px;
-     background: rgba(0,0,0,0.1);
+<<<<<<< HEAD
+     background: white
      border: 1px solid rgba(0,0,0,0.3);
+=======
+     background: rgba(255,255,255,0.1);
+     border: 1px solid rgba(255,255,255,0.3);
+>>>>>>> 6a3400b075805abe8d1d43e1b0db71d44628f7e3
      margin-bottom: 40px;
+     z-index: 20;
 }
 
 .form_input:focus {
-    outline:  1px solid rgba(0,0,0,0.7);    
+    outline:  1px solid rgba(255,255,255,0.7);    
 }
 
 .form_input:focus + .form_label{
@@ -60,17 +75,22 @@ body{
     padding-left: 15px;
     position: absolute;
     margin-top: -85px;
-    z-index: -20;
-    color: rgba(0,0,0,0.5);
+    z-index: 10;
+    color: rgba(255,255,255,0.5);
     transition: all 0.2s;
 }
 
 .form_submit{
-    background: rgba(0,0,0,0.7);
+    background: #8b8b8b;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
+}
+
+.form_submit:hover{
+    background: #0a7d91;
+    color: black;
 }
 
 .fijar{
@@ -254,6 +274,83 @@ section#contenedor_general{
     header nav ul li .caret{
         float: right;
     }
+}
+
+/*Registro*/
+.registro{
+    width:40%;
+    background: rgba(0,0,0,.6);
+    position: relative;
+    color: black;
+    top: 65px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+.tema{
+    width: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    font-family: inherit;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+form{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+
+.input-text{
+    width: 40%;
+    padding: 10px;
+    margin: 15px 5px;
+    font-size: 15px;
+}
+
+.big{
+    width: 83%;
+    margin: 15px 25px;
+}
+
+.boton{
+    width: 100%;
+    margin: 10px 10px;
+    background: transparent;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+input#correo, input#DUI {
+}
+
+.boton-registro{
+    width:25%;
+    padding: 15px;
+    border: 0;
+    margin-right: 35px;
+    background: rgba(0,0,0,.9);
+    color: white;
 }
 
 
