@@ -38,9 +38,9 @@
     <div class="contenedor-1">
         <div class="contenedor-iniciar">
             <h2 class="tema-login">Iniciar Sesión</h2>
-            <form action="" method="GET">
-                 <input type="text" class = "texto" placeholder="Ingrese Correo" name="correo" required><br>
-                 <input type="password" class = "texto" placeholder="Ingrese Contraseña" name="clave" required><br>
+            <form action="validar.php" method="POST">
+                 <input type="text" class = "texto" id = "correo" placeholder="Ingrese Correo" name="correo" required><br>
+                 <input type="password" class = "texto" id = "clave" placeholder="Ingrese Contraseña" name="clave" required><br>
                  <input type="submit" class="botoncito">
             </form>
         </div>
@@ -53,8 +53,7 @@
          <h3>¿No te has unido a nuestra comunidad?, puedes crear una cuenta <a href="../asset/Register.php">Aquí</a></h3>
     </div>
     
-   
-    
+       
     
      <script src="../js/index.js"></script>
      <script src="../js/jquery.js"></script>
