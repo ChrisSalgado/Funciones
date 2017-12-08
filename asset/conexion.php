@@ -1,8 +1,4 @@
 <?php
-    $host = "%localhost";
-    $usuario = "Chrisalgado";
-    $password = " ";
-    
     $conexion = mysqli_connect('localhost', 'root', '');
     
     if (!$conexion) {
