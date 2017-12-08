@@ -40,7 +40,7 @@
                <div class="tema">
                      <h2 class="tema">Registrar Usuario</h2>
                </div>
-                <form action="insertar.php" method="POST" class="formu">
+                <form action="insertar.php" method="POST" id="form_registro" class="form_registro">
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre" class="input-text">
                     <input type="text" placeholder="Apellido" id="apellido" name="apellido" class="input-text">
                     <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text" onkeypress="return solonumeros(event)" onpaste="return false">
