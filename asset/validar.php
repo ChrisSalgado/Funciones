@@ -1,26 +1,28 @@
 <?php
-        require("conexion.php");
+ require("conexion.php");
+error_reporting (0);
 
-if(isset($_POST["correo"])){
-    $usuario = $_POST['correo'];
+$usuario = $_POST['correo'];
+$clave = $_POST['clave'];
+
+$conexion = mysqli_connect('localhost', 'root', '', 'funciones');
+$consulta = "SELECT * FROM usuario WHERE Nombre = '$usuario' and pass = '$clave'";
+$resultado = mysqli_query($conexion, $consulta);
+
+$filas = mysqli_num_rows($resultado);
+
+if ($fila > 0){
+    header("location:Bienvenido.php");
 }
+else{
+    echo '
+        <script>
+        alert("Error en la autenticacion");
+        window.history.go(-1);
+        </script>
+    ';
+}
+mysqli_free_result($resultado);
+mysqli_close($conexion);
 
-             $conexion = mysqli_connect('localhost', 'root', '') or die("Database connection failed: " . mysqli_error());
-             $my_select = mysqli_select_db($conexion, 'funciones') or die("Database selection failed: " . mysqli_error());
-            
-             $resultado = mysqli_query($conexion, "SELECT Nombre, Contraseña FROM usuario WHERE Nombre = '$usuario' and Contraseña = '$_POST['pass']' ");
-          
-        
-            $filas = mysqli_num_rows($resultado);
-
-            if ($filas > 0){
-                header("location:Bienvenido.php");
-            }else{
-                echo "Error en la autenticacion";
-            }
-
-            mysqli_free_result($resultado);
-            mysqli_close($conexion);
-            
-            
 ?> 

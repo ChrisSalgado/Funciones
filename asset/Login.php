@@ -38,6 +38,7 @@
     <div class="contenedor-1">
         <div class="contenedor-iniciar">
             <h2 class="tema-login">Iniciar Sesión</h2>
+            
             <form action="validar.php" method="POST">
                  <input type="text" class = "texto" id = "correo" placeholder="Ingrese Correo" name="correo" required><br>
                  <input type="password" class = "texto" id = "clave" placeholder="Ingrese Contraseña" name="clave" required><br>
