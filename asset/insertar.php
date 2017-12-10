@@ -1,9 +1,6 @@
 <?php
-session_start();
 error_reporting (0);
 include ('conexion.php');
-
-$_SESSION['message'] = '';
 
 $mysqli = new mysqli('localhost', 'root', '', 'funciones');
 
@@ -22,14 +19,36 @@ $mysqli = new mysqli('localhost', 'root', '', 'funciones');
                 //Consulta para insertar
                 $insertar = "INSERT INTO usuario (Nombre, Apellido, DUI, Fecha, pass, correo) values ('".$nombre."', '".$apellido."', '".$DUI."', '".$Fecha."', '".$pass."', '".$correo."')";
                 
+                //verificar si ya esta insertado
+                $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuario WHERE correo = '$correo'");
+                if(mysqli_num_rows($verificar_usuario) > 0 ){
+                    echo '<script>
+                            alert("El registro fue agregado con exito");
+                            window.history.go(-1);
+                          </script>   
+                    ';
+                    exit;
+                }
+                
+                $verificar_DUI = mysqli_query($conexion, "SELECT * FROM usuario WHERE DUI = '$DUI'");
+                if(mysqli_num_rows($verificar_usuario) > 0 ){
+                    echo '<script>
+                            alert("El registro fue agregado con exito");
+                            window.history.go(-1);
+                          </script>   
+                    ';
+                    exit;
+                }
+                
+                
+                //
                 $resultado = mysqli_query($conexion, $insertar);
                 
                 if($mysqli->query($insertar) == true){
                     echo '<script>
                             alert("El registro fue agregado con exito");
                             window.history.go(-1);
-                          </script>
-                          
+                          </script>   
                     ';
                 }else{
                     echo '<script>
@@ -48,10 +67,6 @@ $mysqli = new mysqli('localhost', 'root', '', 'funciones');
                     ';
             }
         }
-
-        
-        
-        //Ejecutar consulta
 
            
         //mysqli_free_result($query);

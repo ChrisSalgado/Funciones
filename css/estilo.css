@@ -177,9 +177,10 @@ section#contenedor_general{
     margin: 15px 5px;
     font-size: 15px;
 }
-
-.errores{
-    color: blue;
+.mensaje{
+    color: white;
+    font-size: 40px;
+    display: inline-block;
 }
 
 .big{
