@@ -1,22 +1,25 @@
 <?php
-include 'conexion.php';
-        $Nombre = $_POST["Nombre"];
-        $Apellido = $_POST["Apellido"];
+error_reporting (0);
+include ('conexion.php');
+        
+        //Recibir los datos a las variables
+        $nombre = $_POST["nombre"];
+        $apellido = $_POST["apellido"];
         $DUI = $_POST["DUI"];
         $Fecha = $_POST["Fecha"];
-        $Pass = $_POST["pass"];
-        $Correo = $_POST["correo"];
-        $conexion=mysqli_connect('localhost', 'root', '', 'funciones');
+        $pass = $_POST["pass"];
+        $correo = $_POST["correo"];
         
-        //$f= explode('/', $Fecha);
-        //$fecha_sql=$f[2]."-".$f[0]."-".$f[1];
-        $consulta="INSERT INTO usuario (Nombre, Apellido, DUI, Fecha, Pass, correo) VALUES ('$Nombre', '$Apellido', '$DUI', '$Fecha', '$Pass', '$Correo')";
+        //Consulta para insertar
+        $insertar = "INSERT INTO usuario (Nombre, Apellido, DUI, Fecha, pass, correo) values ('".$nombre."', '".$apellido."', '".$DUI."', '".$Fecha."', '".$pass."', '".$correo."')";
         
-        $query=mysqli_query($conexion, $consulta);
-        if (!$query){
-            echo 'Error al registrarse';
-        }else {
-            echo 'Datos ingresados correctamente';
+        //Ejecutar consulta
+        $resultado = mysqli_query($conexion, $insertar);
+        
+        if(!$resultado){
+            echo "error al registrarse";
+        }else{
+            echo "usuario registrado correctamente";
         }
         
            
