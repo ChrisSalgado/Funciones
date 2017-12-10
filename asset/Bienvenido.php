@@ -1,10 +1,29 @@
 <!DOCTYPE html>
+
+<?php
+    session_start();
+    error_reporting (0);
+    $varsesion = $_SESSION['usuario'];   
+
+    if($varsesion == null || $varsesion = ''){
+         echo '
+        <script>
+        alert("USTED NO TIENE AUTORIZACIÓN");
+        window.history.go(-1);
+        </script>
+    ';
+        die;
+    }
+
+    
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="fonts.css">
 
 </head>
@@ -36,8 +55,8 @@
         </nav>
     </header>
     
-    <h1>Bienvenidos a todos y todas </h1>
-    
+    <h1 style="color: white;">Bienvenido/a: <?php  echo $_SESSION['usuario'] ?></h1>
+    <a href="cerrar_sesion.php">Cerrar Sesión</a>
     
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>

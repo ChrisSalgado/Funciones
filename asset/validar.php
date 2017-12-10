@@ -1,17 +1,20 @@
 <?php
- require("conexion.php");
+session_start();
+
+require("conexion.php");
 error_reporting (0);
 
 $usuario = $_POST['correo'];
 $clave = $_POST['clave'];
 
+$_SESSION['usuario'] = $usuario;
+
 $conexion = mysqli_connect('localhost', 'root', '', 'funciones');
-$consulta = "SELECT * FROM usuario WHERE Nombre = '$usuario' and pass = '$clave'";
-$resultado = mysqli_query($conexion, $consulta);
+$consulta = mysqli_query($conexion, "SELECT * FROM usuario WHERE Nombre = '$usuario' and pass = '$clave'");
 
-$filas = mysqli_num_rows($resultado);
+$filas = mysqli_num_rows($consulta);
 
-if ($fila > 0){
+if ($filas > 0){
     header("location:Bienvenido.php");
 }
 else{
