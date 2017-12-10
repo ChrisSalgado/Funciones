@@ -49,7 +49,7 @@
                     <input type="password" placeholder="Contraseña" id="pass" name="pass" class="input-text">
                     <input type="password" placeholder="Repetir Contraseña" id="Repetirpass" name="Repetirpass" class="input-text">
                     <input type="mail" placeholder="Correo" id="correo" name="correo" class="input-text big">
-                    <h2 class="errores" id="Mensaje1">Faltan campos</h2> 
+                    <h2 class="errores" id="Mensaje1">Faltan campos por llenar</h2> 
                     <div class="boton">
                         <input type="submit" value ="Registrarse" name="boton" id="boton" class="boton-registro">
                     </div>
