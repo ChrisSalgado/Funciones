@@ -16,6 +16,8 @@ body{
     background-size: cover;
 }
 
+
+
 /*diseño del nav*/
 
 body{background: #FEFEFE;}
@@ -174,6 +176,10 @@ section#contenedor_general{
     padding: 10px;
     margin: 15px 5px;
     font-size: 15px;
+}
+
+.errores{
+    color: blue;
 }
 
 .big{
