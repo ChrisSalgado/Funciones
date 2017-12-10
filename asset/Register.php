@@ -40,9 +40,15 @@
                <div class="tema">
                      <h2 class="tema">Registrar Usuario</h2>
                </div>
+<<<<<<< HEAD
                 <form action="insertar.php" method="POST" id="form_registro" name="form_registro" class="form_registro" onsubmit="return ValidarDatos()">
                     <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" class="input-text">
                     <input type="text" placeholder="Apellido" id="Apellido" name="Apellido" class="input-text">
+=======
+                <form action="insertar.php" method="POST" id="form_registro" class="formu">
+                    <input type="text" placeholder="Nombre" id="Nombre" name="nombre" class="input-text">
+                    <input type="text" placeholder="Apellido" id="Apellido" name="apellido" class="input-text">
+>>>>>>> a259f4ce9bff3620f1d6af3be9c2ca1a4c18473b
                     <input type="text" placeholder="DUI/sin guión" id="DUI" name="DUI" class="input-text" onkeypress="return solonumeros(event)" onpaste="return false">
                     <input type="text" placeholder="yyyy-mm-dd" id="Fecha" name="Fecha" class="input-text" onkeypress="return solonumeros(event)" onpaste="return false">
                     <input type="password" placeholder="Contraseña" id="pass" name="pass" class="input-text">
