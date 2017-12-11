@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+*{
+    padding: 0px;
+    margin 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/*diseño del nav*/
+
+body{background: #FEFEFE;}
+
+.menu_bar{
+    display: none;
+}
+
+header{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+header nav{
+    background: transparent;
+    z-index: 1000;
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+
+header nav ul li:hover{
+    background: #000;
+}
+
+/*submenu*/
+
+header nav ul li:hover .children{
+    display: block;
+}
+
+
+
+header nav ul li .children{
+    display: none;
+    background: rgba(255,255,255,0.2);
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+}
+
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a{
+    display: block;
+}
+
+header nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/*flecha de sub menú*/
+
+header nav ul li .caret{
+    position: relative;
+    top 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+
+/*---------------------------Inicio del Wallpaper------------------------*/
+
+section#contenedor_general{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+    background-image: url(../img/img.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+.contenedor_opciones{
+    width: 100%;
+    background: transparent;
+    height: 300px;
+    padding: 50px;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.opciones{
+    width: 30%;
+    height: 200px;
+    background: #fff;
+    color: black;
+    padding: 30px;
+    border: 2px solid #000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.mini_tema{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+.boton_general{
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    background: #a20606;
+    border: 0px;
+    color: white;
+}

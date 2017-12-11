@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <title>Inicio</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/admin_estilo.css">
     <link rel="stylesheet" href="fonts.css">
 
 </head>
@@ -47,16 +47,29 @@
                 <li class="submenu">
                     <a href="#"><span class="icon-user"></span>Usuario<span class="caret icon-circle-down"></span></a>
                     <ul class="children">
-                        <li><a href="asset/Register.php">Registrarse <span class="icon-circle-left"></span></a></li>
-                        <li><a href="asset/Login.php">Iniciar Sesión <span class="icon-circle-left"></span></a></li>
+                        <li><a href="../asset/cerrar_sesion.php">cerrar sesión <span class="icon-circle-left"></span></a></li>
                     </ul>
                 </li>
+                
             </ul>
         </nav>
     </header>
-    
     <h1 style="color: white;">Bienvenido/a: <?php  echo $_SESSION['usuario'] ?></h1>
-    <a href="cerrar_sesion.php">Cerrar Sesión</a>
+    
+    <section class = "contenedor_opciones">
+            <div class="modificar_usuario opciones">
+                <h3 class="mini_tema">Modificar Usuario</h3>
+                <input type="button"  value= "Modificar Usuario" class="boton_general">
+            </div>
+            <div class="crear_usuario opciones">
+                <h3 class="mini_tema">Crear Usuario</h3>
+                <input type="button"  value= "Crear Usuario" class="boton_general">
+            </div>
+            <div class="borrar_usuario opciones">
+                <h3 class="mini_tema">Borrar Usuario</h3>
+                <input type="button"  value= "Borrar Usuario" class="boton_general">
+            </div>
+    </section>
     
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
